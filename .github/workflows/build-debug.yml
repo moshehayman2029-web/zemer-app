@@ -20,6 +20,47 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Create stub google-services.json
+        run: |
+          cat << 'EOF' > app/google-services.json
+          {
+            "project_info": {
+              "project_number": "123456789012",
+              "project_id": "mlh811-music",
+              "storage_bucket": "mlh811-music.appspot.com"
+            },
+            "client": [
+              {
+                "client_info": {
+                  "mobilesdk_app_id": "1:123456789012:android:1111111111111111",
+                  "android_client_info": {
+                    "package_name": "com.koshermusic.mlh811music"
+                  }
+                },
+                "api_key": [
+                  {
+                    "current_key": "AIzaSyDummyKeyForBuildOnly1234567890"
+                  }
+                ]
+              },
+              {
+                "client_info": {
+                  "mobilesdk_app_id": "1:123456789012:android:2222222222222222",
+                  "android_client_info": {
+                    "package_name": "com.jtech.zemer"
+                  }
+                },
+                "api_key": [
+                  {
+                    "current_key": "AIzaSyDummyKeyForBuildOnly1234567890"
+                  }
+                ]
+              }
+            ],
+            "configuration_version": "1"
+          }
+          EOF
+
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
