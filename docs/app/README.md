@@ -7,7 +7,7 @@
 | Fact | Value |
 | --- | --- |
 | Gradle module | `:app` |
-| Namespace / application ID | `com.jtech.zemer` / `com.jtech.zemer` |
+| Namespace / application ID | `com.jtech.zemer` / `com.koshermusic.mlh811music` |
 | Compile / min / target SDK | `36` / `26` / `36` |
 | Version code/name | `41` / `41` |
 | Kotlin/JVM target | JVM 21 |
