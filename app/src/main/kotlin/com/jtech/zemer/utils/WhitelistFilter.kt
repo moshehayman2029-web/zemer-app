@@ -11,6 +11,12 @@ import kotlinx.coroutines.flow.firstOrNull
 import timber.log.Timber
 import java.util.concurrent.ConcurrentHashMap
 
+private val CUSTOM_ALLOWED_ARTIST_IDS = setOf(
+    "UCuACQmW04T3v9Mz_1_suFYw", // Avicii (YouTube Music)
+    "UCPHjpfnnGklkRBBTd0k6aHg", // Avicii (YouTube)
+    "UCX2Pm1JoWF3chsVOR9e1hbQ", // Alex Warren (YouTube Music)
+)
+
 /**
  * Extension functions to filter YouTube API content by artist whitelist.
  *
@@ -211,8 +217,9 @@ fun shouldKeepPlaylistSong(
     localArtistIds: Collection<String>,
     allowedArtistIds: Set<String>,
 ): Boolean {
-    if (allowedArtistIds.isEmpty()) return false
-    return remoteArtistIds.any { it in allowedArtistIds } || localArtistIds.any { it in allowedArtistIds }
+    val effectiveAllowedIds = allowedArtistIds + CUSTOM_ALLOWED_ARTIST_IDS
+    if (effectiveAllowedIds.isEmpty()) return false
+    return remoteArtistIds.any { it in effectiveAllowedIds } || localArtistIds.any { it in effectiveAllowedIds }
 }
 
 /**
@@ -271,6 +278,10 @@ private suspend fun MusicDatabase.artistMatchesFilters(
     config: ContentFilterConfig,
 ): Boolean {
     if (!config.filtersEnabled) {
+        return true
+    }
+
+    if (artistId in CUSTOM_ALLOWED_ARTIST_IDS) {
         return true
     }
 
