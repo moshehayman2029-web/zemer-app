@@ -20,11 +20,6 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Restore complete upstream strings.xml
-        run: |
-          curl -fsSL https://raw.githubusercontent.com/ZemerTeam/zemer-app/main/app/src/main/res/values/strings.xml \
-            -o app/src/main/res/values/strings.xml
-
       - name: Generate persistent debug keystore
         run: |
           keytool -genkey -v \
@@ -54,6 +49,12 @@ jobs:
                     "package_name": "com.koshermusic.mlh811music"
                   }
                 },
+                "oauth_client": [
+                  {
+                    "client_id": "123456789012-dummywebclientid1234567890abcdef.apps.googleusercontent.com",
+                    "client_type": 3
+                  }
+                ],
                 "api_key": [
                   {
                     "current_key": "AIzaSyDummyKeyForBuildOnly1234567890"
@@ -67,6 +68,12 @@ jobs:
                     "package_name": "com.jtech.zemer"
                   }
                 },
+                "oauth_client": [
+                  {
+                    "client_id": "123456789012-dummywebclientid1234567890abcdef.apps.googleusercontent.com",
+                    "client_type": 3
+                  }
+                ],
                 "api_key": [
                   {
                     "current_key": "AIzaSyDummyKeyForBuildOnly1234567890"
@@ -82,7 +89,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build Debug APK
-        run: ./gradlew :app:assembleDebug --console=plain
+        run: ./gradlew :app:assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
