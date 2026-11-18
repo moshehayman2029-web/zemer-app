@@ -104,7 +104,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.jtech.zemer"
+        applicationId = "com.koshermusic.mlh811music"
         minSdk = 26
         targetSdk = 36
         versionCode = 41
