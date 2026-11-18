@@ -734,7 +734,7 @@ The following inventory is generated from repository files outside `.git`, `.gra
 | `app/src/main/kotlin/com/jtech/zemer/utils/VisiblePlaylistSongs.kt` | 50 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/utils/WhitelistCache.kt` | 52 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/utils/WhitelistFetcher.kt` | 107 lines | `.kt` |
-| `app/src/main/kotlin/com/jtech/zemer/utils/WhitelistFilter.kt` | 316 lines | `.kt` |
+| `app/src/main/kotlin/com/jtech/zemer/utils/WhitelistFilter.kt` | 327 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/utils/YTPlayerUtils.kt` | 810 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/utils/ZemerContentClient.kt` | 371 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/utils/markdown/LiteMarkdown.kt` | 199 lines | `.kt` |
