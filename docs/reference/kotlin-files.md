@@ -137,7 +137,7 @@ Every tracked Kotlin file is listed with hard metadata extracted from the file t
 | `app/src/main/kotlin/com/jtech/zemer/models/PersistQueue.kt` | 91 | `com.jtech.zemer.models` | no | 1 | 41 | java.io |
 | `app/src/main/kotlin/com/jtech/zemer/net/ContentSignature.kt` | 80 | `com.jtech.zemer.net` | no | 7 | 20 | com.google, io.ktor, java.security, java.util |
 | `app/src/main/kotlin/com/jtech/zemer/net/EnvSignals.kt` | 82 | `com.jtech.zemer.net` | no | 6 | 19 | android.content, android.os, java.io |
-| `app/src/main/kotlin/com/jtech/zemer/net/UnofficialCopy.kt` | 58 | `com.jtech.zemer.net` | no | 4 | 13 | java.net, kotlinx.coroutines |
+| `app/src/main/kotlin/com/jtech/zemer/net/UnofficialCopy.kt` | 33 | `com.jtech.zemer.net` | no | 4 | 10 | java.net, kotlinx.coroutines |
 | `app/src/main/kotlin/com/jtech/zemer/net/ZemerHeaders.kt` | 158 | `com.jtech.zemer.net` | no | 16 | 29 | io.ktor, kotlinx.coroutines, okhttp3.OkHttpClient, okhttp3.RequestBody, okhttp3.Response, okio.Buffer |
 | `app/src/main/kotlin/com/jtech/zemer/net/ZemerHosts.kt` | 23 | `com.jtech.zemer.net` | no | 2 | 3 | java.net |
 | `app/src/main/kotlin/com/jtech/zemer/net/ZemerRefusal.kt` | 44 | `com.jtech.zemer.net` | no | 5 | 15 | java.net, kotlinx.serialization, timber.log |

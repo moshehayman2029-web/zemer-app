@@ -289,7 +289,7 @@ The following inventory is generated from repository files outside `.git`, `.gra
 | `app/src/main/kotlin/com/jtech/zemer/models/PersistQueue.kt` | 91 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/net/ContentSignature.kt` | 80 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/net/EnvSignals.kt` | 82 lines | `.kt` |
-| `app/src/main/kotlin/com/jtech/zemer/net/UnofficialCopy.kt` | 58 lines | `.kt` |
+| `app/src/main/kotlin/com/jtech/zemer/net/UnofficialCopy.kt` | 33 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/net/ZemerHeaders.kt` | 158 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/net/ZemerHosts.kt` | 23 lines | `.kt` |
 | `app/src/main/kotlin/com/jtech/zemer/net/ZemerRefusal.kt` | 44 lines | `.kt` |
