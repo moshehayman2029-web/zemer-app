@@ -436,7 +436,6 @@
     <string name="chart_rank_only">Number %1$d</string>
 
     <!-- Widget -->
-    <string name="app_name">MLH811 music</string>
     <string name="widget_description">Control your music playback</string>
     <string name="widget_tap_to_open">Tap to open</string>
     <!-- Update dialog -->
