@@ -91,7 +91,7 @@ The following inventory is generated from repository files outside `.git`, `.gra
 
 | Path | Lines/bytes | Kind |
 | --- | ---: | --- |
-| `.github/workflows/build-debug.yml` | 74 lines | `.yml` |
+| `.github/workflows/build-debug.yml` | 86 lines | `.yml` |
 | `.github/workflows/debug-build.yml` | 65 lines | `.yml` |
 | `.github/workflows/docs-regenerate.yml` | 80 lines | `.yml` |
 | `.github/workflows/player-monitor.yml` | 208 lines | `.yml` |
